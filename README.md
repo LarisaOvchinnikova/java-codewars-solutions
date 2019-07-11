@@ -24,3 +24,4 @@ public class Multiply {
     }
 }
 ```
+"# java-codewars-solutions" 
