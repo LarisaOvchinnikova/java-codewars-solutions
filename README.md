@@ -15,5 +15,12 @@ public class Maps {
 }
 ```
 
-*[x]  
-
+*[x] [Multiply](https://www.codewars.com/kata/multiply/train/java/5d271474c1e94c00297de6bc)
+> The code does not execute properly. Try to figure out why.
+```java
+public class Multiply {
+    public static Double multiply(Double a, Double b) {
+        return a * b;
+    }
+}
+```
