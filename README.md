@@ -31,8 +31,7 @@ public class Kata {
     public static int[] getSize(int w,int h,int d) {
        int s = 2 * (w*h + w*d + h*d);
        int v = w * h * d;
-      // int [ ] res = {s, v};
-       return res;
+       return new int [] {s, v};
     }
 }
 ```
