@@ -49,3 +49,26 @@ public class Number {
   }
 }
 ```
+
+* [x] Task from Interview 
+> Find sum of two largest elements in array using one loop
+```java
+public class Main {
+    public static void main(String[] args) {
+        int [] a = {1, 7, 5, 2, 8, 4};
+        int maxB = a[0];
+        int maxS = a[1];
+        int temp;
+        for  (int i = 1; i < a.length; i++){
+            if (a[i] > maxB) {
+                temp = maxB;
+                maxB = a[i];
+                maxS = temp;
+            }
+        }
+        System.out.println(maxB);
+        System.out.println(maxS);
+
+    }
+}
+```
