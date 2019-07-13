@@ -38,8 +38,7 @@ public class Kata {
 
 * [x] [Is it even?](https://www.codewars.com/kata/is-it-even/train/java)
 > Your code will determine if the number passed is even (or not).
-
-``` java  
+```java 
 public class Number {
   public boolean isEven(double n) {
       if ( n % 2 == 0) {
