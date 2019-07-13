@@ -70,7 +70,6 @@ public class Main {
         System.out.println(maxS);
         int sum = maxB + maxS;
         System.out.println(sum);
-
     }
 }
 ```
