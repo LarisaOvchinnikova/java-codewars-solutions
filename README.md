@@ -24,4 +24,16 @@ public class Multiply {
     }
 }
 ```
-"# java-codewars-solutions" 
+* [x] [Surface Area and Volume of a Box](https://www.codewars.com/kata/surface-area-and-volume-of-a-box/train/java)
+> Write a function that returns the total surface area and volume of a box as an array: [area, volume]
+```java
+public class Kata {
+    public static int[] getSize(int w,int h,int d) {
+       int s = 2 * (w*h + w*d + h*d);
+       int v = w * h * d;
+      // int [ ] res = {s, v};
+       return res;
+    }
+}
+```
+
