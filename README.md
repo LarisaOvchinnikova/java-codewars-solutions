@@ -73,3 +73,18 @@ public class Main {
     }
 }
 ```
+* [x] [Maximum Product](https://www.codewars.com/kata/maximum-product/train/java)
+> Given an array of integers. Find the maximum product obtained from multiplying 2 adjacent numbers in the array.
+```java
+public class MaxProduct {
+  public int adjacentElementsProduct(int[] arr) {
+    // your code here
+   int max = arr[0] * arr[1];
+   for (int i = 0; i < arr.length-1; i++){
+     if (arr[i] * arr[i+1] > max) {
+        max = arr[i] * arr[i+1];}
+   }
+   return max;
+  }
+}
+```
