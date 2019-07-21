@@ -88,3 +88,22 @@ public class MaxProduct {
   }
 }
 ```
+* [x] Count of letters 'e' in array
+```java
+public class Main {
+    public static void main(String[] args) {
+        String[][] arr = {{"Привет", "всем", "кто"}, {"изучает", "язык", "пограммирования", "java"}};
+        int n = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++){
+                for (int k = 0; k < arr[i][j].length(); k++) {
+                    if (arr[i][j].charAt(k) == 'е') {
+                        n++;
+                    }
+                }
+            }
+        }
+        System.out.println(n);
+    }
+}
+```
