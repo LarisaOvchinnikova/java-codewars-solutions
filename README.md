@@ -125,3 +125,24 @@ public class Main {
             }
         }
 }
+```
+* [x] [1/n- Cycle](https://www.codewars.com/kata/1-slash-n-cycle/train/java)
+> Let be n an integer prime with 10 e.g. 7.
+    1/7 = 0.142857 142857 142857 ....
+    We see that the decimal part has a cycle: 142857. The length of this cycle is 6. In the same way:
+    1/11 = 0.09 09 09 .... Cycle length is 2.
+    Task:  Given an integer n (n > 1), the function cycle(n) returns the length of the cycle if n and 10 are coprimes, otherwise returns -1.
+```java
+class Cycle {
+    public static int cycle(int n) {
+        if (n % 2 == 0 || n % 5 == 0) return -1;
+        int d = 9;
+        int k = 1;
+        while (d % n > 0) {
+           d = (d % n) * 10 + 9;
+           k++;
+        }
+        return k;
+    }
+}
+```
