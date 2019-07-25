@@ -108,7 +108,7 @@ public class Main {
 }
 ```
 
-* [x] Count words that doesn't contains letter 'e'
+* [x] Count words that doesn't contains letter 'e' (Homework)
 ```java
 public class Main {
 
@@ -146,3 +146,13 @@ class Cycle {
     }
 }
 ```
+* [x] [Training JS #7: if..else and ternary operator](https://www.codewars.com/kata/57202aefe8d6c514300001fd/solutions/java)
+> Complete function saleHotdogs/SaleHotDogs, function accept 1 parameters:n, n is the number of customers to buy hotdogs, different numbers have different prices (refer to the following table), return a number that the customer need to pay how much money.
+ ```java
+ public class SaleHotdogs{
+   public static int saleHotdogs(final int n){
+    return (n < 5) ? 100 * n : (n < 10) ? 95 * n : 90 * n;
+   }
+ }
+ ```
+ 
