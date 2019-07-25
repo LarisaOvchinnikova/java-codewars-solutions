@@ -155,4 +155,19 @@ class Cycle {
    }
  }
  ```
- 
+* [x] [Square(n) Sum](https://www.codewars.com/kata/square-n-sum/train/java/5d39348b707f1e00219ab985) 
+> Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+```java 
+ public class Kata
+  {
+   public static int squareSum(int[] n)
+   { 
+    int sum = 0;
+    for (int i = 0; i < n.length; i++){
+      sum += n[i] * n[i];
+    }
+    return sum;
+   }
+  }
+```
