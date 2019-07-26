@@ -194,3 +194,12 @@ public class Main {
 }
 
 ```
+* [x] [Is n divisible by x and y?](https://www.codewars.com/kata/is-n-divisible-by-x-and-y/train/java)
+> Create a function isDivisible(n, x, y) that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits.
+```java
+public class DivisibleNb {
+	public static boolean isDivisible(long n, long x, long y) {
+		return (n % x == 0 & n % y == 0);
+	}
+}
+```
