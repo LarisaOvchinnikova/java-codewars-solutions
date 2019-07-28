@@ -219,17 +219,25 @@ public class ReverseWords{
 ```
 * [x][8kyu interpreters: HQ9+](https://www.codewars.com/kata/8kyu-interpreters-hq9-plus/train/java)
 > You task is to implement an simple interpreter for the notorious esoteric language HQ9+ that will work for a single character input:
-  
   If the input is 'H', return 'Hello World!'
   If the input is 'Q', return the input
   If the input is '9', return the full lyrics of 99 Bottles of Beer.
 ```java
 public class HQ {
   public static String HQ9(char code) {
-  String lyric = "99 bottles of beer on the wall, 99 bottles of beer.\nTake one down and pass it around, 98 bottles of beer on the wall.\n98 bottles of beer on the wall, 98 bottles of beer.\nTake one down and pass it around, 97 bottles of beer on the wall.\n97 bottles of beer on the wall, 97 bottles of beer.\nTake one down and pass it around, 96 bottles of beer on the wall.\n...\n...\n...\n2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n1 bottle of beer on the wall, 1 bottle of beer.\nTake one down and pass it around, no more bottles of beer on the wall.\nNo more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall."
+  String s = "";
   if (code == 'H') return "Hello World!";
-  if (code == 'Q') return code;
-  if (code == '9') return lyric;
+  else
+  if (code == 'Q') return "Q";
+  else
+  if (code == '9') {
+   for (int i = 99; i >=3; i--){
+     s = s + i+" bottles of beer on the wall, "+ i+" bottles of beer.\nTake one down and pass it around, "+ (i-1)+" bottles of beer on the wall.\n";
+   }
+   s = s +"2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n1 bottle of beer on the wall, 1 bottle of beer.\nTake one down and pass it around, no more bottles of beer on the wall.\nNo more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.";
+   return s;
+   }
+   else return null;
   }
 }
 ```
