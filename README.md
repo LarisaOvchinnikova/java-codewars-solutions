@@ -203,3 +203,17 @@ public class DivisibleNb {
 	}
 }
 ```
+* [x] [Reversed Words](https://www.codewars.com/kata/51c8991dee245d7ddf00000e/train/java)
+> Complete the solution so that it reverses all of the words within the string passed in.
+```java
+public class ReverseWords{
+ public static String reverseWords(String str){
+    String[] words = str.split("\\s");
+    String s = "";
+    for (int i = words.length - 1; i >= 0; i--){
+      s = s + words[i] + ' ';
+    }
+    return s.trim();
+ }
+}
+```
