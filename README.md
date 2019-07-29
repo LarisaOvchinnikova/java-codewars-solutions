@@ -157,19 +157,16 @@ class Cycle {
  ```
 * [x] [Square(n) Sum](https://www.codewars.com/kata/square-n-sum/train/java/5d39348b707f1e00219ab985) 
 > Complete the square sum function so that it squares each number passed into it and then sums the results together.
-
 ```java 
- public class Kata
-  {
-   public static int squareSum(int[] n)
-   { 
+public class Kata {
+   public static int squareSum(int[] n){ 
     int sum = 0;
     for (int i = 0; i < n.length; i++){
       sum += n[i] * n[i];
     }
     return sum;
-   }
   }
+}
 ```
 * [x] [Playing with cubes I](https://www.codewars.com/kata/playing-with-cubes-i/train/java)
 > Create a public class called Cube without a constructor which gets one single private Integer variable Side, a getter GetSide() and a setter SetSide(int num) method for this property. Actually, getter and setter methods are not the common way to write this code in C#. In the next kata of this series, we gonna refactor the code and make it a bit more professional... Note: There's no need to check for negative values!
