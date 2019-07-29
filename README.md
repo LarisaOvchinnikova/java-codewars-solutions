@@ -298,3 +298,34 @@ public class EncapsulationDemo{
     this.anObject = anObject;
   }
 }
+```
+* [x] [Building blocks](https://www.codewars.com/kata/building-blocks/train/java)
+> Write a class Block that creates a block (Duh..)
+  The constructor should take an array as an argument, this will contain 3 integers of the form [width, length, height] from which the Block should be created.
+```java
+public class Block{
+  private int[]block;
+
+ public Block(int[]block){
+   this.block = block;
+}
+ 
+ int getWidth(){
+    return block[0];
+ }
+ int getLength(){
+    return block[1];
+ }
+ int getHeight(){
+    return block[2];
+ } 
+
+ int getVolume(){
+   return block[0] * block[1] * block[2];
+ }
+ int getSurfaceArea(){
+   return 2 * (block[0] * block[1] + block[0] * block[2] + block[1] * block[2]);
+ }
+}
+```  
+  
