@@ -241,3 +241,24 @@ public class HQ {
   }
 }
 ```
+* [x] [Maximum Multiple](https://www.codewars.com/kata/maximum-multiple/train/java)
+> Given a Divisor and a Bound , Find the largest integer N , Such That ,
+  
+  Conditions :
+  N is divisible by divisor
+  
+  N is less than or equal to bound
+  
+  N is greater than 0.
+```java
+public class MaxMultiple {
+  public static int maxMultiple(int divisor, int bound) {
+    int res = 0;
+    if (bound < divisor) res = 0;
+      for (int i = bound; i > 0; i--){
+       if (i % divisor == 0) {res = i; break;}
+      }
+      return res;
+  }
+}
+```
