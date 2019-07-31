@@ -365,3 +365,16 @@ public class Block{
   }
 }
 ```
+* [x] [Calculate BMI](https://www.codewars.com/kata/calculate-bmi/train/java)
+> Write function bmi that calculates body mass index (bmi = weight / height ^ 2).
+```java
+public class Calculate {
+  public static String bmi(double weight, double height) {
+  double bmi = weight/Math.pow(height,2);
+  if (bmi <= 18.5) return "Underweight";
+   else if (bmi <= 25) return "Normal";
+     else if (bmi <= 30) return "Overweight";
+       else return "Obese";
+  }
+}
+```
