@@ -33,7 +33,6 @@ public class Kata {
     }
 }
 ```
-
 * [x] [Is it even?](https://www.codewars.com/kata/is-it-even/train/java)
 > Your code will determine if the number passed is even (or not).
 ```java 
@@ -412,6 +411,27 @@ public class Kata {
     arr[i] = (i+1) * n;
    }
   return arr;
+ }
+}
+```
+* [x] [Ball Upwards](https://www.codewars.com/kata/ball-upwards/train/java)
+>You throw a ball vertically upwards with an initial speed v (in km per hour). The height h of the ball at each time t is given by h = v*t - 0.5*g*t*t where g is Earth's gravity (g ~ 9.81 m/s**2). A device is recording at every tenth of second the height of the ball. For example with v = 15 km/h the device gets something of the following form: (0, 0.0), (1, 0.367...), (2, 0.637...), (3, 0.808...), (4, 0.881..) ... where the first number is the time in tenth of second and the second number the height in meter.
+ Write a function max_ball with parameter v (in km per hour) that returns the time in tenth of second of the maximum height recorded by the device.
+```java
+public class Ball {
+ public static int maxBall(double v) {
+  double g = 9.81;
+  double t = 0;
+  double h = 0;
+  double hmax = 0;
+  double tmax=0;
+  v = v * 10 / 36;
+  while (h >= 0) {
+    t = t + 0.1;
+    h = v * t - 0.5 * g * t * t;
+    if (h > hmax) {hmax = h; tmax =t;}
+  }
+  return (int)(Math.round(tmax * 10));
  }
 }
 ```
