@@ -435,3 +435,43 @@ public class Ball {
  }
 }
 ```
+* [x] [Two fighters, one winner.](https://www.codewars.com/kata/two-fighters-one-winner/train/java)
+```java
+public class Kata {
+  public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
+  // Fighter fighter1 = new Fighter("Lew", 10, 2);
+  // Fighter fighter2 = new Fighter("Harry", 5, 4);
+  // String firstAttacker = "Lew";
+
+while (fighter1.health > 0 & fighter2.health > 0) {
+		if (firstAttacker == fighter1.name) 
+		 {
+			 fighter2.health -= fighter1.damagePerAttack; 
+			 firstAttacker = fighter2.name;
+		 } 
+		 else 
+		 if (firstAttacker == fighter2.name) {
+			 fighter1.health -= fighter2.damagePerAttack; 
+			 firstAttacker = fighter1.name;
+		   }
+	 } 
+	  if (fighter1.health <= 0) return fighter2.name;
+		    else return fighter1.name;
+  }
+} 
+```
+```java
+public class Fighter {
+	String name;
+	int health;
+	int damagePerAttack;
+	
+	public Fighter(String name, int health, int damagePerAttack) {
+		super();
+		this.name = name;
+		this.health = health;
+		this.damagePerAttack = damagePerAttack;
+	}
+
+}
+```
