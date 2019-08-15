@@ -475,3 +475,13 @@ public class Fighter {
 
 }
 ```
+* [x] [Regexp Basics - is it a digit?](https://www.codewars.com/kata/regexp-basics-is-it-a-digit/train/java)
+
+```
+public class StringUtils {
+  
+  public static boolean isDigit(String s) {
+    return s.matches("^[0-9]$");
+  }
+}
+```
