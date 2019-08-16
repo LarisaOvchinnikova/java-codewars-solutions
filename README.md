@@ -477,11 +477,27 @@ public class Fighter {
 ```
 * [x] [Regexp Basics - is it a digit?](https://www.codewars.com/kata/regexp-basics-is-it-a-digit/train/java)
 
-```
+```java
 public class StringUtils {
   
   public static boolean isDigit(String s) {
     return s.matches("^[0-9]$");
   }
+}
+```
+* [x] [A Rule of Divisibility by 7](https://www.codewars.com/kata/a-rule-of-divisibility-by-7/train/java)
+
+```java
+class DivSeven {
+    public static long[] seven(long m) {
+      int k = 0;
+      while (m > 99) {
+        m =(long)Math.floor(m / 10) - 2 * (m % 10);
+        k++;
+      }
+      
+      long[] arr = {m, k};
+      return arr;
+    }
 }
 ```
